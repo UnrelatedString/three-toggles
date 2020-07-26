@@ -1,4 +1,4 @@
-package net.fabricmc.example.mixin;
+package com.github.unrelatedstring.three_toggles.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;

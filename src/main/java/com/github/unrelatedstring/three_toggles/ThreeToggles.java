@@ -15,7 +15,9 @@ public class ThreeToggles implements ClientModInitializer {
 
 	private static void onTick(MinecraftClient client) {
 		if (toggleSneak.isPressed()) {
-			client.player.setSneaking(true);
+			//System.out.println(client.player.isSneaking());
+			client.player.input.sneaking = true;
+			//System.out.println(client.player.isSneaking());
 		}
 	}
 

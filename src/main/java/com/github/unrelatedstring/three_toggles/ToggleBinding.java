@@ -22,6 +22,9 @@ public class ToggleBinding {
     public void tick(MinecraftClient client) {
         if (binding.wasPressed()) {
             while (binding.wasPressed()) ;
+            if (on) {
+                target.apply(client).setPressed(false);
+            }
             on = !on;
         }
         if (on) {

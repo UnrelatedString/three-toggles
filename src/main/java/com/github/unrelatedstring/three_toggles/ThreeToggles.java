@@ -16,7 +16,7 @@ public class ThreeToggles implements ClientModInitializer {
 
 	private static void onTick(MinecraftClient client) {
 		if (toggleSneak.isPressed()) {
-			KeyBinding.setKeyPressed(InputUtil.fromKeyCode(GLFW.GLFW_KEY_LEFT_SHIFT, 0), true);
+			client.options.keySneak.setPressed(true);
 			System.out.println(client.player.isSneaking());
 		}
 	}

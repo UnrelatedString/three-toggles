@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.event.client.ClientTickCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.options.KeyBinding;
 import net.minecraft.client.options.StickyKeyBinding;
+import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
 public class ThreeToggles implements ClientModInitializer {
@@ -15,7 +16,7 @@ public class ThreeToggles implements ClientModInitializer {
 
 	private static void onTick(MinecraftClient client) {
 		if (toggleSneak.isPressed()) {
-			client.player.input.sneaking = true;
+			KeyBinding.setKeyPressed(InputUtil.fromKeyCode(GLFW.GLFW_KEY_LEFT_SHIFT, 0), !client.player.isSneaking());
 			System.out.println(client.player.isSneaking());
 		}
 	}

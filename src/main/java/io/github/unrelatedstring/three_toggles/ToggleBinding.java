@@ -1,4 +1,4 @@
-package com.github.unrelatedstring.three_toggles;
+package io.github.unrelatedstring.three_toggles;
 
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.event.client.ClientTickCallback;

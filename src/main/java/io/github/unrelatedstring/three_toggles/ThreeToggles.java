@@ -1,4 +1,4 @@
-package com.github.unrelatedstring.three_toggles;
+package io.github.unrelatedstring.three_toggles;
 
 import net.fabricmc.api.ClientModInitializer;
 import org.lwjgl.glfw.GLFW;

@@ -15,9 +15,8 @@ public class ThreeToggles implements ClientModInitializer {
 
 	private static void onTick(MinecraftClient client) {
 		if (toggleSneak.isPressed()) {
-			//System.out.println(client.player.isSneaking());
 			client.player.input.sneaking = true;
-			//System.out.println(client.player.isSneaking());
+			System.out.println(client.player.isSneaking());
 		}
 	}
 
@@ -31,11 +30,11 @@ public class ThreeToggles implements ClientModInitializer {
 										   GLFW.GLFW_KEY_V,
 				             	           "category.three_toggles.toggles",
 		                                   () -> true);
-		toggleWalk =  new StickyKeyBinding("key.three_toggles.walk",
+		toggleWalk  = new StickyKeyBinding("key.three_toggles.walk",
 									       GLFW.GLFW_KEY_B,
 					                       "category.three_toggles.toggles",
 							  	           () -> true);
-		toggleMine =  new StickyKeyBinding("key.three_toggles.mine",
+		toggleMine  = new StickyKeyBinding("key.three_toggles.mine",
 								     	   GLFW.GLFW_KEY_N,
 					        		 	   "category.three_toggles.toggles",
 										   () -> true);

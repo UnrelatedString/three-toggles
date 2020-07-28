@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: three-toggles
+Upstream-Contact: UnrelatedString <unrelatedstring@gmail.com>
+Source: https://github.com/UnrelatedString/three-toggles
+
+Files: src/*
+Copyright: 2020 UnrelatedString <unrelatedstring@gmail.com>
+License: GPL-3.0-or-later
+
+Files: src.main/resources/assets/three_toggles/icon.png
+Copyright: Mojang Studios
+License: LicenseRef-Mojang-Brand-Guidelines

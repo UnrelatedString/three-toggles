@@ -33,13 +33,16 @@ public class ThreeToggles implements ClientModInitializer {
 
 		toggleSneak = new ToggleBinding("key.three_toggles.sneak",
 									    GLFW.GLFW_KEY_V,
-						  			    (client) -> client.options.keySneak);
+						  			    (client) -> client.options.keySneak,
+										"key.sneak");
 		toggleWalk  = new ToggleBinding("key.three_toggles.walk",
 				    				    GLFW.GLFW_KEY_B,
-									    (client) -> client.options.keyForward);
+									    (client) -> client.options.keyForward,
+										"key.forward");
 		toggleMine  = new ToggleBinding("key.three_toggles.mine",
 										GLFW.GLFW_KEY_N,
-										(client) -> client.options.keyAttack);
+										(client) -> client.options.keyAttack,
+										"key.attack");
 
 	}
 }

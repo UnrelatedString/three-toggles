@@ -13,7 +13,7 @@
     "sources": "https://github.com/UnrelatedString/three-toggles"
   },
 
-  "license": "GPLv3.0+",
+  "license": "GPL-3.0-or-later",
   "icon": "assets/three_toggles/icon.png",
 
   "environment": "*",

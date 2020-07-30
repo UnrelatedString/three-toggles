@@ -7,10 +7,6 @@ Files: src/*
 Copyright: 2020 UnrelatedString <unrelatedstring@gmail.com>
 License: GPL-3.0-or-later
 
-Files: META-INF/MANIFEST.MF
-Copyright: 2020 UnrelatedString <unrelatedstring@gmail.com>
-License: GPL-3.0-or-later
-
 Files: src/main/resources/assets/three_toggles/icon.png
 Copyright: Mojang Studios
 License: LicenseRef-Mojang-Brand-Guidelines

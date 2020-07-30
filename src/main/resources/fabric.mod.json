@@ -1,37 +1,37 @@
 {
-  "schemaVersion": 1,
-  "id": "three_toggles",
-  "version": "2.0.0",
+	"schemaVersion": 1,
+	"id": "three_toggles",
+	"version": "2.0.0",
 
-  "name": "Three Toggles",
-  "description": "Lets you toggle sneak, walk, and mine",
-  "authors": [
-    "UnrelatedString"
-  ],
-  "contact": {
-    "homepage": "https://github.com/UnrelatedString/three-toggles",
-    "sources": "https://github.com/UnrelatedString/three-toggles"
-  },
+	"name": "Three Toggles",
+	"description": "Lets you toggle sneak, walk, and mine",
+	"authors": [
+		"UnrelatedString"
+	],
+	"contact": {
+		"homepage": "https://github.com/UnrelatedString/three-toggles",
+		"sources": "https://github.com/UnrelatedString/three-toggles"
+	},
 
-  "license": "GPL-3.0-or-later",
-  "icon": "assets/three_toggles/icon.png",
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/three_toggles/icon.png",
 
-  "environment": "*",
-  "entrypoints": {
-    "client": [
-      "io.github.unrelatedstring.three_toggles.ThreeToggles"
-    ]
-  },
-  "mixins": [
-    "three_toggles.mixins.json"
-  ],
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"io.github.unrelatedstring.three_toggles.ThreeToggles"
+		]
+	},
+	"mixins": [
+		"three_toggles.mixins.json"
+	],
 
-  "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
-  }
+	"depends": {
+		"fabricloader": ">=0.9.0",
+		"fabric": "*",
+		"minecraft": ">=1.16.1"
+	},
+	"suggests": {
+		"flamingo": "*"
+	}
 }

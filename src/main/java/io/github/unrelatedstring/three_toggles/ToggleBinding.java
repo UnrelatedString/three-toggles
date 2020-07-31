@@ -20,8 +20,7 @@ public class ToggleBinding {
     public Function<MinecraftClient, KeyBinding> target;
     public static Map<String, ToggleBinding> toggles = new HashMap<>();
 
-    public ToggleBinding(String id, int key, Function<MinecraftClient, KeyBinding> target, String targetTranslationKey) {
-        this.target = target;
+    public ToggleBinding(String id, int key, String targetTranslationKey) {
         binding = new StickyKeyBinding(id, key, "category.three_toggles.toggles", () -> true);
         KeyBindingHelper.registerKeyBinding(binding);
         toggles.put(targetTranslationKey, this);

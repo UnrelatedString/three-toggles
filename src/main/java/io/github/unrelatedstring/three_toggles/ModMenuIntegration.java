@@ -22,9 +22,8 @@ import io.github.prospector.modmenu.api.ModMenuApi;
 import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.gui.screen.Screen;
 
-import java.util.function.Supplier;
+//It's worth noting that this file is more or less copied straight off of https://shedaniel.gitbook.io/cloth-config/advanced/modmenu-integration and https://shedaniel.gitbook.io/cloth-config/auto-config/generating-a-cloth-config-screen
 
 @Environment(EnvType.CLIENT)
 public class ModMenuIntegration implements ModMenuApi {

@@ -2,5 +2,7 @@
   "category.three_toggles.toggles": "The Three Toggles",
   "key.three_toggles.sneak": "Toggle Sneak",
   "key.three_toggles.walk": "Toggle Walk Forwards",
-  "key.three_toggles.mine": "Toggle Mine"
+  "key.three_toggles.mine": "Toggle Mine",
+  "text.autoconfig.three_toggles.option.isThisWorking": "TODO: delete this lmao",
+  "text.autoconfig.three_toggles.option.list": "Custom uhhhhhhhhhhh"
 }

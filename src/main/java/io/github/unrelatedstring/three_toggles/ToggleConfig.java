@@ -20,7 +20,11 @@ package io.github.unrelatedstring.three_toggles;
 import me.sargunvohra.mcmods.autoconfig1u.ConfigData;
 import me.sargunvohra.mcmods.autoconfig1u.annotation.Config;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Config(name = "three_toggles")
 public class ToggleConfig implements ConfigData {
     boolean isThisWorking = false;
+    List<String> list = new ArrayList<>();
 }

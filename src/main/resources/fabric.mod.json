@@ -20,6 +20,9 @@
 	"entrypoints": {
 		"client": [
 			"io.github.unrelatedstring.three_toggles.ThreeToggles"
+		],
+		"modmenu": [
+			"io.github.unrelatedstring.three_toggles.ModMenuIntegration"
 		]
 	},
 	"mixins": [

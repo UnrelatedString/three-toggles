@@ -34,6 +34,8 @@ dependencies {
 
     // AutoConfig 1u for configuration stuff
     modApi "me.sargunvohra.mcmods:autoconfig1u:3.2.0-unstable"
+    // and ModMenu because yeah
+    modImplementation "io.github.prospector:modmenu:1.14.5+build.30"
 }
 
 processResources {

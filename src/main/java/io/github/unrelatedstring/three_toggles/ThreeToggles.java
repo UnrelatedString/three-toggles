@@ -6,6 +6,8 @@
 
 package io.github.unrelatedstring.three_toggles;
 
+import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
+import me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import org.lwjgl.glfw.GLFW;
 
@@ -29,6 +31,9 @@ public class ThreeToggles implements ClientModInitializer {
         toggleMine = new ToggleBinding("key.three_toggles.mine",
                 GLFW.GLFW_KEY_N,
                 "key.attack");
+
+        AutoConfig.register(ToggleConfig.class, GsonConfigSerializer::new);
+        ToggleConfig config = AutoConfig.getConfigHolder(ToggleConfig.class).getConfig();
 
     }
 }

@@ -35,6 +35,8 @@ dependencies {
     // Cloth Config + AutoConfig 1u for configuration stuff
     modApi "me.shedaniel.cloth:config-2:4.6.0"
     modApi "me.sargunvohra.mcmods:autoconfig1u:3.2.0-unstable"
+    include "me.shedaniel.cloth:config-2:4.6.0"
+    include "me.sargunvohra.mcmods:autoconfig1u:3.2.0-unstable"
     // and ModMenu because yeah
     modImplementation "io.github.prospector:modmenu:1.14.5+build.30"
 }

@@ -12,6 +12,9 @@ import me.sargunvohra.mcmods.autoconfig1u.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
 import org.lwjgl.glfw.GLFW;
 
+import java.util.ListIterator;
+
+
 public class ThreeToggles implements ClientModInitializer {
 
     // designed for QWERTY, respecting default vanilla key bindings
@@ -54,11 +57,11 @@ public class ThreeToggles implements ClientModInitializer {
     public void setBindings() {
         ToggleBinding.toggles.clear();
         ToggleConfig config = AutoConfig.getConfigHolder(ToggleConfig.class).getConfig();
-        int i = 0;
-        for (String target : config.targets) {
+        ListIterator<String> targetsIter = config.targets.listIterator(config.targets.size());
+        for (int i = 0; targetsIter.hasPrevious(); i++) {
             new ToggleBinding(
-                    i < defaultKeys.length ? defaultKeys[i++] : -1,
-                    target);
+                    i < defaultKeys.length ? defaultKeys[i] : -1,
+                    targetsIter.previous());
         }
     }
 }

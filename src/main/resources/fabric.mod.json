@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "three_toggles",
-	"version": "3.0.0",
+	"version": "3.0.1",
 
 	"name": "Three Toggles",
 	"description": "Lets you toggle sneak, walk, and mine",

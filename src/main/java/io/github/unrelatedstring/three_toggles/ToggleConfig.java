@@ -19,12 +19,13 @@ package io.github.unrelatedstring.three_toggles;
 
 import me.sargunvohra.mcmods.autoconfig1u.ConfigData;
 import me.sargunvohra.mcmods.autoconfig1u.annotation.Config;
+import me.sargunvohra.mcmods.autoconfig1u.annotation.ConfigEntry;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @Config(name = "three_toggles")
 public class ToggleConfig implements ConfigData {
-    boolean isThisWorking = false;
-    List<String> list = new ArrayList<>();
+    @ConfigEntry.Gui.Tooltip(count = 3)
+    List<String> targets = new ArrayList<String>(Arrays.asList("key.sneak", "key.forward", "key.attack"));
+
 }

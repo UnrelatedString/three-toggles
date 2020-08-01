@@ -13,15 +13,17 @@ import net.minecraft.client.options.StickyKeyBinding;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
 
 public class ToggleBinding {
     public KeyBinding binding;
-    public Function<MinecraftClient, KeyBinding> target;
     public static Map<String, ToggleBinding> toggles = new HashMap<>();
 
-    public ToggleBinding(String id, int key, String targetTranslationKey) {
-        binding = new StickyKeyBinding(id, key, "category.three_toggles.toggles", () -> true);
+    public ToggleBinding(int key, String targetTranslationKey) {
+        binding = new StickyKeyBinding(
+                "key.three_toggles."+targetTranslationKey,
+                key,
+                "category.three_toggles.toggles",
+                () -> true);
         KeyBindingHelper.registerKeyBinding(binding);
         toggles.put(targetTranslationKey, this);
     }

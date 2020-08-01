@@ -22,14 +22,11 @@ public class ThreeToggles implements ClientModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        toggleSneak = new ToggleBinding("key.three_toggles.sneak",
-                GLFW.GLFW_KEY_V,
+        toggleSneak = new ToggleBinding(GLFW.GLFW_KEY_V,
                 "key.sneak");
-        toggleWalk = new ToggleBinding("key.three_toggles.walk",
-                GLFW.GLFW_KEY_B,
+        toggleWalk = new ToggleBinding(GLFW.GLFW_KEY_B,
                 "key.forward");
-        toggleMine = new ToggleBinding("key.three_toggles.mine",
-                GLFW.GLFW_KEY_N,
+        toggleMine = new ToggleBinding(GLFW.GLFW_KEY_N,
                 "key.attack");
 
         AutoConfig.register(ToggleConfig.class, GsonConfigSerializer::new);

@@ -54,7 +54,7 @@ public class ThreeToggles implements ClientModInitializer {
 
     }
 
-    public void setBindings() {
+    public static void setBindings() {
         ToggleBinding.toggles.clear();
         ToggleConfig config = AutoConfig.getConfigHolder(ToggleConfig.class).getConfig();
         ListIterator<String> targetsIter = config.targets.listIterator(config.targets.size());

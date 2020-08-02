@@ -1,6 +1,11 @@
 {
   "category.three_toggles.toggles": "The Three Toggles",
-  "key.three_toggles.sneak": "Toggle Sneak",
-  "key.three_toggles.walk": "Toggle Walk Forwards",
-  "key.three_toggles.mine": "Toggle Mine"
+  "key.three_toggles.key.sneak": "Toggle Sneak",
+  "key.three_toggles.key.forward": "Toggle Walk Forwards",
+  "key.three_toggles.key.attack": "Toggle Mine",
+  "text.autoconfig.three_toggles.title": "Three (or more!) Toggles options",
+  "text.autoconfig.three_toggles.option.targets": "Toggles",
+  "text.autoconfig.three_toggles.option.targets.@Tooltip[0]": "Must be the §otranslation key§r of the binding you want to",
+  "text.autoconfig.three_toggles.option.targets.@Tooltip[1]": "be able to toggle--that is, the text that gets mapped to",
+  "text.autoconfig.three_toggles.option.targets.@Tooltip[2]": "the name of the binding in a lang file."
 }

@@ -1,7 +1,7 @@
 /*
- * SPDX-FileCopyrightText: 2020 UnrelatedString <unrelatedstring@gmail.com>
+ * SPDX-FileCopyrightText: 2022 UnrelatedString <unrelatedstring@gmail.com>
  *
- * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 package io.github.unrelatedstring.three_toggles;
